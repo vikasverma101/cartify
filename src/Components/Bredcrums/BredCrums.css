@@ -1,0 +1,37 @@
+/* Mobile-first base styles */
+.bredcrums{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .bredcrums{
+        gap: 7px;
+        font-size: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 0 40px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .bredcrums{
+        gap: 8px;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+}

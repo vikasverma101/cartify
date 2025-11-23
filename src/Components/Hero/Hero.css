@@ -1,0 +1,143 @@
+/* Mobile-first base styles */
+.hero{
+    min-height: 100vh;
+    background:linear-gradient(180deg,#47fdae,#e1ffea22 60%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+.hero-left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.hero-hand-icon img {
+    height: 40px;
+    width: auto;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    max-width: 280px;
+    height: 45px;
+    border-radius: 75px;
+    margin: 20px auto 0;
+    background: #ff4141;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.hero-latest-btn img {
+    height: 20px;
+    width: auto;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right img {
+    height: 250px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .hero{
+        flex-direction: row;
+        padding: 40px;
+        gap: 20px;
+    }
+    .hero-left{
+        text-align: left;
+        padding-left: 40px;
+    }
+    .hero-left h2{
+        font-size: 18px;
+    }
+    .hero-left p{
+        font-size: 48px;
+    }
+    .hero-hand-icon{
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .hero-hand-icon img {
+        height: 50px;
+    }
+    .hero-latest-btn{
+        margin: 30px 0 0;
+        width: 280px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .hero-latest-btn img {
+        height: 25px;
+    }
+    .hero-right img {
+        height: 350px;
+        object-fit: contain;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .hero{
+        padding-left: 80px;
+    }
+    .hero-left{
+        padding-left: 80px;
+    }
+    .hero-left h2{
+        font-size: 20px;
+    }
+    .hero-left p{
+        font-size: 60px;
+    }
+    .hero-hand-icon{
+        gap: 20px;
+    }
+    .hero-hand-icon img {
+        height: 60px;
+    }
+    .hero-latest-btn{
+        width: 300px;
+        font-size: 18px;
+    }
+    .hero-latest-btn img {
+        height: 30px;
+    }
+    .hero-right img {
+        height: 400px;
+        object-fit: contain;
+    }
+}
